@@ -8,9 +8,9 @@ import tensorflow as tf
 app = Flask(__name__)
 CORS(app)
 
-model = tf.keras.models.load_model("mango_classification.h5")
+model = tf.keras.models.load_model("./mango_classification.h5")
 
-CLASS = ['Anthracnose', 'Bacterial Canker', 'Cutting Weevil', 'Die Back', 'Gall Midge', 'Healthy', 'Powdery Mildew', 'Sooty Mould']
+CLASS = ['Unhealthy', 'Healthy']
 
 IMG_SIZE = 50
 
