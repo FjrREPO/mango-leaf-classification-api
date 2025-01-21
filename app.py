@@ -10,7 +10,7 @@ CORS(app)
 
 model = tf.keras.models.load_model("./mango_classification.h5")
 
-CLASS = ['Unhealthy', 'Healthy']
+CLASS = ['Healthy', 'Unhealthy']
 
 IMG_SIZE = 50
 
